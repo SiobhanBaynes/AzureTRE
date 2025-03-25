@@ -16,3 +16,15 @@ variable "aad_redirect_uris_b64" {
 variable "create_aad_groups" {
   type = string
 }
+variable "swagger_ui_client_id" {
+  type = string
+}
+variable "auth_client_id" {
+  type = string
+}
+variable "auth_client_secret" {
+  type = string
+}
+variable "auth_tenant_id" {
+  type = string
+}

@@ -27,6 +27,7 @@ def get_config() -> dict:
         config["firewall_sku"] = os.environ.get("FIREWALL_SKU", "")
         config["enable_cmk_encryption"] = os.environ.get("ENABLE_CMK_ENCRYPTION", "false")
         config["key_store_id"] = os.environ.get("KEY_STORE_ID", None)
+        config["swagger_ui_client_id"] = os.environ["SWAGGER_UI_CLIENT_ID"]
 
         try:
             config["number_processes_int"] = int(config["number_processes"])
